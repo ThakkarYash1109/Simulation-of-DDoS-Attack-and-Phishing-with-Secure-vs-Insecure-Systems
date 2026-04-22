@@ -1,0 +1,12 @@
+<input type="text" id="url" placeholder="Target URL"><br><br>
+<button onclick="attack()">Generate Load</button>
+
+<script>
+function attack() {
+    for (let i = 0; i < 20; i++) {
+        fetch("update.php", {
+            method: "POST"
+        });
+    }
+}
+</script>
